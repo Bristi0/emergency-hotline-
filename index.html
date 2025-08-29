@@ -374,39 +374,41 @@
                 </div>
             </div>
 
+
+
+
             <!-- Right: Call History -->
 
-            <div class="w-full lg:w-80 bg-white rounded-xl shadow p-5 h-full min-h-full">
-                <div class="flex justify-between items-center mb-4">
-                    <div class="flex items-center gap-2">
-                        <span class="text-xl">🕒</span>
-                        <h2 class="text-lg font-semibold text-gray-800">Call History</h2>
-                    </div>
+            <div class="flex min-h-screen bg-green-50 p-4 gap-4">
 
-                    <!--<h2 class="text-lg font-semibold text-gray-800 ">
-                        Call History
-                    </h2>-->
-                    <button class="text-sm text-white bg-green-600 px-3 py-1 rounded-full hover:bg-red-600 transition">
-                        Clear
-                    </button>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 flex-grow">
+                    <!-- Cards will be added here via JS -->
                 </div>
 
-                <!-- History List -->
-                <ul class="space-y-3 max-h-[500px] overflow-y-auto pr-1">
-                    <li class="border-b pb-2">
-                        <div class="flex justify-between items-center">
-                            <div>
-                                <p class="text-sm font-medium text-gray-800">Fire Service Number</p>
-                                <p class="text-xs text-gray-500">999</p>
-                            </div>
-                            <span class="text-xs text-gray-400">11:35 AM</span>
+                <!-- Right: Call History Sidebar -->
+                <div class="w-full lg:w-80 bg-white rounded-xl shadow p-5 h-full min-h-full">
+                    <!-- Header -->
+                    <div class="flex justify-between items-center mb-4">
+                        <div class="flex items-center gap-2">
+                            <span class="text-xl">🕒</span>
+                            <h2 class="text-lg font-semibold text-gray-800">Call History</h2>
                         </div>
-                    </li>
-                    <!-- more list items... -->
-                </ul>
+                        <button
+                            class="text-sm text-white bg-green-600 px-3 py-1 rounded-full hover:bg-red-600 transition">
+                            Clear
+                        </button>
+                    </div>
+
+                    <!-- Call History List -->
+                    <div class="flex flex-col gap-2">
+
+                    </div>
+                </div>
             </div>
 
         </div>
+
+    </div>
     </div>
 
 </body>
