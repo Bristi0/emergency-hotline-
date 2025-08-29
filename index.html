@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency hotline</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+
+<body class="bg-white">
+
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center px-6 py-3 shadow-md">
+        <!-- Left: Logo + Text -->
+        <div class="flex items-center gap-2">
+            <img src="assets/logo.png" alt="Gov Logo" class="w-10 h-10">
+            <span class="font-bold text-green-800 text-lg">Emergency <br> Service</span>
+        </div>
+
+        <!-- Right: Stats + Button -->
+        <div class="flex items-center gap-4">
+            <!-- Like -->
+            <div class="flex items-center gap-1 bg-green-50 px-3 py-1 rounded-full">
+                <span class="font-medium text-gray-700">0</span>
+                <img src="assets/heart.png" alt="heart" class="w-5 h-5">
+
+            </div>
+
+            <!-- Coin -->
+            <div class="flex items-center gap-1 bg-green-50 px-3 py-1 rounded-full">
+                <span class="font-medium text-gray-700">100</span>
+                <img src="assets/coin.png" alt="coin" class="w-5 h-5">
+            </div>
+
+            <!-- Copy Button -->
+            <button class="bg-green-600 hover:bg-green-700 text-white px-4 py-1 rounded-full font-medium text-sm">
+                Copy
+            </button>
+
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-green-800 text-white text-center py-12">
+        <div class="flex flex-col items-center">
+            <img src="assets/logo-dark.png" alt="Gov Seal" class="w-16 h-16 mb-4">
+            <h1 class="text-2xl md:text-3xl font-bold">Emergency Service Directory</h1>
+            <p class="text-sm md:text-base mt-2">
+                Government Emergency Services at Your Fingertip –
+                A Project by Government of the People’s Republic of Bangladesh
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+
+    <div class="bg-green-50 min-h-screen py-10 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-6">
+
+            <!-- Left: Emergency Card Grid -->
+            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- card1 -->
+                <div class="bg-white rounded-xl shadow p-5 w-full">
+                    <!-- Icon and Heart-->
+                    <div class="flex justify-between items-center mb-4">
+                        <div class="bg-red-100 p-2 rounded-xl">
+                            <img src="assets/emergency.png" class="w-6 h-6" />
+                        </div>
+                        <button class="text-gray-400 hover:text-red-500 text-xl">🤍</button>
+                    </div>
+
+                    <!-- Text Below -->
+                    <div class="mb-4">
+                        <h3 class="text-base font-semibold text-gray-900">National Emergency Number</h3>
+                        <p class="text-sm text-gray-500">National Emergency</p>
+                    </div>
+
+                    <!-- Emergency Number -->
+                    <div class="mb-4">
+                        <p class="text-3xl font-bold text-gray-900">999</p>
+                        <span class="text-xs bg-gray-100 text-gray-600 px-3 py-0.5 rounded-full">All</span>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="flex space-x-3">
+                        <button
+                            class="w-1/2 border border-gray-300 text-sm px-4 py-2 rounded-lg hover:bg-gray-100 flex items-center justify-center gap-1">
+                            📋 Copy
+                        </button>
+                        <button
+                            class="w-1/2 bg-green-500 text-white text-sm px-4 py-2 rounded-lg hover:bg-green-600 flex items-center justify-center gap-1">
+                            📞 Call
+                        </button>
+                    </div>
+                </div>
+
+                <!--card2-->
+                <div class="bg-white rounded-xl shadow p-5 w-full">
+                    <!-- Icon and Heart Side-by-Side -->
+                    <div class="flex justify-between items-center mb-4">
+                        <div class="bg-red-100 p-2 rounded-xl">
+                            <img src="assets/police.png" class="w-6 h-6" />
+                        </div>
+                        <button class="text-gray-400 hover:text-red-500 text-xl">🤍</button>
+                    </div>
+
+                    <!-- Text Below -->
+                    <div class="mb-4">
+                        <h3 class="text-base font-semibold text-gray-900">Police helpline Number</h3>
+                        <p class="text-sm text-gray-500">Police</p>
+                    </div>
+
+                    <!-- Emergency Number -->
+                    <div class="mb-4">
+                        <p class="text-3xl font-bold text-gray-900">999</p>
+                        <span class="text-xs bg-gray-100 text-gray-600 px-3 py-0.5 rounded-full">Police</span>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="flex space-x-3">
+                        <button
+                            class="w-1/2 border border-gray-300 text-sm px-4 py-2 rounded-lg hover:bg-gray-100 flex items-center justify-center gap-1">
+                            📋 Copy
+                        </button>
+                        <button
+                            class="w-1/2 bg-green-500 text-white text-sm px-4 py-2 rounded-lg hover:bg-green-600 flex items-center justify-center gap-1">
+                            📞 Call
+                        </button>
+                    </div>
+                </div>
+
+
+                <!--card3-->
+                <div class="bg-white rounded-xl shadow p-5 w-full">
+                    <!-- Icon and Heart Side-by-Side -->
+                    <div class="flex justify-between items-center mb-4">
+                        <div class="bg-red-100 p-2 rounded-xl">
+                            <img src="assets/fire-service.png" class="w-6 h-6" />
+                        </div>
+                        <button class="text-gray-400 hover:text-red-500 text-xl">🤍</button>
+                    </div>
+
+                    <!-- Text Below -->
+                    <div class="mb-4">
+                        <h3 class="text-base font-semibold text-gray-900">Fire Survice Number</h3>
+                        <p class="text-sm text-gray-500">Fire</p>
+                    </div>
+
+                    <!-- Emergency Number -->
+                    <div class="mb-4">
+                        <p class="text-3xl font-bold text-gray-900">999</p>
+                        <span class="text-xs bg-gray-100 text-gray-600 px-3 py-0.5 rounded-full">Fire</span>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="flex space-x-3">
+                        <button
+                            class="w-1/2 border border-gray-300 text-sm px-4 py-2 rounded-lg hover:bg-gray-100 flex items-center justify-center gap-1">
+                            📋 Copy
+                        </button>
+                        <button
+                            class="w-1/2 bg-green-500 text-white text-sm px-4 py-2 rounded-lg hover:bg-green-600 flex items-center justify-center gap-1">
+                            📞 Call
+                        </button>
+                    </div>
+                </div>
+                <!--card4-->
+                <div class="bg-white rounded-xl shadow p-5 w-full">
+                    <!-- Icon and Heart Side-by-Side -->
+                    <div class="flex justify-between items-center mb-4">
+                        <div class="bg-red-100 p-2 rounded-xl">
+                            <img src="assets/ambulance.png" class="w-6 h-6" />
+                        </div>
+                        <button class="text-gray-400 hover:text-red-500 text-xl">🤍</button>
+                    </div>
+
+                    <!-- Text Below -->
+                    <div class="mb-4">
+                        <h3 class="text-base font-semibold text-gray-900"> Ambulance Service</h3>
+                        <p class="text-sm text-gray-500">Ambulance</p>
+                    </div>
+
+                    <!-- Emergency Number -->
+                    <div class="mb-4">
+                        <p class="text-3xl font-bold text-gray-900">1994-999999</p>
+                        <span class="text-xs bg-gray-100 text-gray-600 px-3 py-0.5 rounded-full">Health</span>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="flex space-x-3">
+                        <button
+                            class="w-1/2 border border-gray-300 text-sm px-4 py-2 rounded-lg hover:bg-gray-100 flex items-center justify-center gap-1">
+                            📋 Copy
+                        </button>
+                        <button
+                            class="w-1/2 bg-green-500 text-white text-sm px-4 py-2 rounded-lg hover:bg-green-600 flex items-center justify-center gap-1">
+                            📞 Call
+                        </button>
+                    </div>
+                </div>
+                <!--card5-->
+                <div class="bg-white rounded-xl shadow p-5 w-full">
+                    <!-- Icon and Heart Side-by-Side -->
+                    <div class="flex justify-between items-center mb-4">
+                        <div class="bg-red-100 p-2 rounded-xl">
+                            <img src="assets/emergency.png" class="w-6 h-6" />
+                        </div>
+                        <button class="text-gray-400 hover:text-red-500 text-xl">🤍</button>
+                    </div>
+
+                    <!-- Text Below -->
+                    <div class="mb-4">
+                        <h3 class="text-base font-semibold text-gray-900">Women & Child Helpline</h3>
+                        <p class="text-sm text-gray-500">Women & Child Helpline</p>
+                    </div>
+
+                    <!-- Emergency Number -->
+                    <div class="mb-4">
+                        <p class="text-3xl font-bold text-gray-900">109</p>
+                        <span class="text-xs bg-gray-100 text-gray-600 px-3 py-0.5 rounded-full">Help</span>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="flex space-x-3">
+                        <button
+                            class="w-1/2 border border-gray-300 text-sm px-4 py-2 rounded-lg hover:bg-gray-100 flex items-center justify-center gap-1">
+                            📋 Copy
+                        </button>
+                        <button
+                            class="w-1/2 bg-green-500 text-white text-sm px-4 py-2 rounded-lg hover:bg-green-600 flex items-center justify-center gap-1">
+                            📞 Call
+                        </button>
+                    </div>
+                </div>
+                <!--card6-->
+                <div class="bg-white rounded-xl shadow p-5 w-full">
+                    <!-- Icon and Heart Side-by-Side -->
+                    <div class="flex justify-between items-center mb-4">
+                        <div class="bg-red-100 p-2 rounded-xl">
+                            <img src="https://img.icons8.com/ios-filled/50/fa314a/siren.png" class="w-6 h-6" />
+                        </div>
+                        <button class="text-gray-400 hover:text-red-500 text-xl">🤍</button>
+                    </div>
+
+                    <!-- Text Below -->
+                    <div class="mb-4">
+                        <h3 class="text-base font-semibold text-gray-900">Anti-Corruption Helpline</h3>
+                        <p class="text-sm text-gray-500">Anti-Corruption</p>
+                    </div>
+
+                    <!-- Emergency Number -->
+                    <div class="mb-4">
+                        <p class="text-3xl font-bold text-gray-900">106</p>
+                        <span class="text-xs bg-gray-100 text-gray-600 px-3 py-0.5 rounded-full">Govt</span>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="flex space-x-3">
+                        <button
+                            class="w-1/2 border border-gray-300 text-sm px-4 py-2 rounded-lg hover:bg-gray-100 flex items-center justify-center gap-1">
+                            📋 Copy
+                        </button>
+                        <button
+                            class="w-1/2 bg-green-500 text-white text-sm px-4 py-2 rounded-lg hover:bg-green-600 flex items-center justify-center gap-1">
+                            📞 Call
+                        </button>
+                    </div>
+                </div>
+                <!--card7-->
+                <div class="bg-white rounded-xl shadow p-5 w-full">
+                    <!-- Icon and Heart Side-by-Side -->
+                    <div class="flex justify-between items-center mb-4">
+                        <div class="bg-red-100 p-2 rounded-xl">
+                            <img src="https://img.icons8.com/ios-filled/50/fa314a/siren.png" class="w-6 h-6" />
+                        </div>
+                        <button class="text-gray-400 hover:text-red-500 text-xl">🤍</button>
+                    </div>
+
+                    <!-- Text Below -->
+                    <div class="mb-4">
+                        <h3 class="text-base font-semibold text-gray-900">Electricity Helpline</h3>
+                        <p class="text-sm text-gray-500">Electricity Outage</p>
+                    </div>
+
+                    <!-- Emergency Number -->
+                    <div class="mb-4">
+                        <p class="text-3xl font-bold text-gray-900">16216</p>
+                        <span class="text-xs bg-gray-100 text-gray-600 px-3 py-0.5 rounded-full">Electricity</span>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="flex space-x-3">
+                        <button
+                            class="w-1/2 border border-gray-300 text-sm px-4 py-2 rounded-lg hover:bg-gray-100 flex items-center justify-center gap-1">
+                            📋 Copy
+                        </button>
+                        <button
+                            class="w-1/2 bg-green-500 text-white text-sm px-4 py-2 rounded-lg hover:bg-green-600 flex items-center justify-center gap-1">
+                            📞 Call
+                        </button>
+                    </div>
+                </div>
+                <!--card8-->
+                <div class="bg-white rounded-xl shadow p-5 w-full">
+                    <!-- Icon and Heart Side-by-Side -->
+                    <div class="flex justify-between items-center mb-4">
+                        <div class="bg-red-100 p-2 rounded-xl">
+                            <img src="assets/emergency.png" class="w-6 h-6" />
+                        </div>
+                        <button class="text-gray-400 hover:text-red-500 text-xl">🤍</button>
+                    </div>
+
+                    <!-- Text Below -->
+                    <div class="mb-4">
+                        <h3 class="text-base font-semibold text-gray-900">Brac Helpline</h3>
+                        <p class="text-sm text-gray-500">Brac</p>
+                    </div>
+
+                    <!-- Emergency Number -->
+                    <div class="mb-4">
+                        <p class="text-3xl font-bold text-gray-900">16445</p>
+                        <span class="text-xs bg-gray-100 text-gray-600 px-3 py-0.5 rounded-full">NGO</span>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="flex space-x-3">
+                        <button
+                            class="w-1/2 border border-gray-300 text-sm px-4 py-2 rounded-lg hover:bg-gray-100 flex items-center justify-center gap-1">
+                            📋 Copy
+                        </button>
+                        <button
+                            class="w-1/2 bg-green-500 text-white text-sm px-4 py-2 rounded-lg hover:bg-green-600 flex items-center justify-center gap-1">
+                            📞 Call
+                        </button>
+                    </div>
+                </div>
+
+                <!--card9-->
+                <div class="bg-white rounded-xl shadow p-5 w-full">
+                    <!-- Icon and Heart Side-by-Side -->
+                    <div class="flex justify-between items-center mb-4">
+                        <div class="bg-red-100 p-2 rounded-xl">
+                            <img src="assets/emergency.png" class="w-6 h-6" />
+                        </div>
+                        <button class="text-gray-400 hover:text-red-500 text-xl">🤍</button>
+                    </div>
+
+                    <!-- Text Below -->
+                    <div class="mb-4">
+                        <h3 class="text-base font-semibold text-gray-900">Bangladesh Railway Helpline </h3>
+                        <p class="text-sm text-gray-500">Bangladesh Railway</p>
+                    </div>
+
+                    <!-- Emergency Number -->
+                    <div class="mb-4">
+                        <p class="text-3xl font-bold text-gray-900">163</p>
+                        <span class="text-xs bg-gray-100 text-gray-600 px-3 py-0.5 rounded-full">Travel</span>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="flex space-x-3">
+                        <button
+                            class="w-1/2 border border-gray-300 text-sm px-4 py-2 rounded-lg hover:bg-gray-100 flex items-center justify-center gap-1">
+                            📋 Copy
+                        </button>
+                        <button
+                            class="w-1/2 bg-green-500 text-white text-sm px-4 py-2 rounded-lg hover:bg-green-600 flex items-center justify-center gap-1">
+                            📞 Call
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Call History -->
+
+            <div class="w-full lg:w-80 bg-white rounded-xl shadow p-5 h-full min-h-full">
+                <div class="flex justify-between items-center mb-4">
+                    <div class="flex items-center gap-2">
+                        <span class="text-xl">🕒</span>
+                        <h2 class="text-lg font-semibold text-gray-800">Call History</h2>
+                    </div>
+
+                    <!--<h2 class="text-lg font-semibold text-gray-800 ">
+                        Call History
+                    </h2>-->
+                    <button class="text-sm text-white bg-green-600 px-3 py-1 rounded-full hover:bg-red-600 transition">
+                        Clear
+                    </button>
+                </div>
+
+                <!-- History List -->
+                <ul class="space-y-3 max-h-[500px] overflow-y-auto pr-1">
+                    <li class="border-b pb-2">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-sm font-medium text-gray-800">Fire Service Number</p>
+                                <p class="text-xs text-gray-500">999</p>
+                            </div>
+                            <span class="text-xs text-gray-400">11:35 AM</span>
+                        </div>
+                    </li>
+                    <!-- more list items... -->
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
