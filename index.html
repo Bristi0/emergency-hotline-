@@ -31,7 +31,7 @@
 
             <!-- Coin -->
             <div class="flex items-center gap-1 bg-green-50 px-3 py-1 rounded-full">
-                <span class="font-medium text-gray-700">100</span>
+                <span id="coinCount" class="font-medium text-gray-700">100</span>
                 <img src="assets/coin.png" alt="coin" class="w-5 h-5">
             </div>
 
@@ -92,7 +92,8 @@
                             📋 Copy
                         </button>
                         <button
-                            class="w-1/2 bg-green-500 text-white text-sm px-4 py-2 rounded-lg hover:bg-green-600 flex items-center justify-center gap-1">
+                            class=" call-btn w-1/2 bg-green-500 text-white text-sm px-4 py-2 rounded-lg hover:bg-green-600 flex items-center justify-center gap-1"
+                            data-service="Police Helpline" data-number="999">
                             📞 Call
                         </button>
                     </div>
@@ -127,7 +128,8 @@
                             📋 Copy
                         </button>
                         <button
-                            class="w-1/2 bg-green-500 text-white text-sm px-4 py-2 rounded-lg hover:bg-green-600 flex items-center justify-center gap-1">
+                            class=" call-btn w-1/2 bg-green-500 text-white text-sm px-4 py-2 rounded-lg hover:bg-green-600 flex items-center justify-center gap-1"
+                            data-service="Police Helpline" data-number="999">
                             📞 Call
                         </button>
                     </div>
@@ -163,7 +165,8 @@
                             📋 Copy
                         </button>
                         <button
-                            class="w-1/2 bg-green-500 text-white text-sm px-4 py-2 rounded-lg hover:bg-green-600 flex items-center justify-center gap-1">
+                            class=" call-btn w-1/2 bg-green-500 text-white text-sm px-4 py-2 rounded-lg hover:bg-green-600 flex items-center justify-center gap-1"
+                            data-service="Fire Service" data-number="999">
                             📞 Call
                         </button>
                     </div>
@@ -197,7 +200,8 @@
                             📋 Copy
                         </button>
                         <button
-                            class="w-1/2 bg-green-500 text-white text-sm px-4 py-2 rounded-lg hover:bg-green-600 flex items-center justify-center gap-1">
+                            class=" call-btn w-1/2 bg-green-500 text-white text-sm px-4 py-2 rounded-lg hover:bg-green-600 flex items-center justify-center gap-1"
+                            data-service="Ambulance Service" data-number="1994-999999">
                             📞 Call
                         </button>
                     </div>
@@ -231,7 +235,8 @@
                             📋 Copy
                         </button>
                         <button
-                            class="w-1/2 bg-green-500 text-white text-sm px-4 py-2 rounded-lg hover:bg-green-600 flex items-center justify-center gap-1">
+                            class=" call-btn w-1/2 bg-green-500 text-white text-sm px-4 py-2 rounded-lg hover:bg-green-600 flex items-center justify-center gap-1"
+                            data -service="women & Child Helpline" data-number="109">
                             📞 Call
                         </button>
                     </div>
@@ -265,7 +270,8 @@
                             📋 Copy
                         </button>
                         <button
-                            class="w-1/2 bg-green-500 text-white text-sm px-4 py-2 rounded-lg hover:bg-green-600 flex items-center justify-center gap-1">
+                            class="call-btn w-1/2 bg-green-500 text-white text-sm px-4 py-2 rounded-lg hover:bg-green-600 flex items-center justify-center gap-1"
+                            data-service="Anti-Corruption Helpline" data-number="106">
                             📞 Call
                         </button>
                     </div>
@@ -299,7 +305,8 @@
                             📋 Copy
                         </button>
                         <button
-                            class="w-1/2 bg-green-500 text-white text-sm px-4 py-2 rounded-lg hover:bg-green-600 flex items-center justify-center gap-1">
+                            class=" call-btn w-1/2 bg-green-500 text-white text-sm px-4 py-2 rounded-lg hover:bg-green-600 flex items-center justify-center gap-1"
+                            data-service="Electricity Helpline" data-number="16216">
                             📞 Call
                         </button>
                     </div>
@@ -333,7 +340,8 @@
                             📋 Copy
                         </button>
                         <button
-                            class="w-1/2 bg-green-500 text-white text-sm px-4 py-2 rounded-lg hover:bg-green-600 flex items-center justify-center gap-1">
+                            class=" call-btn w-1/2 bg-green-500 text-white text-sm px-4 py-2 rounded-lg hover:bg-green-600 flex items-center justify-center gap-1"
+                            data-service="Brac Helpline" data-number="16445">
                             📞 Call
                         </button>
                     </div>
@@ -368,7 +376,8 @@
                             📋 Copy
                         </button>
                         <button
-                            class="w-1/2 bg-green-500 text-white text-sm px-4 py-2 rounded-lg hover:bg-green-600 flex items-center justify-center gap-1">
+                            class=" call-btn w-1/2 bg-green-500 text-white text-sm px-4 py-2 rounded-lg hover:bg-green-600 flex items-center justify-center gap-1"
+                            data-service="Bangladesh Railway Helpline" data-number="163">
                             📞 Call
                         </button>
                     </div>
@@ -401,7 +410,7 @@
                     </div>
 
                     <!-- Call History List -->
-                    <div class="flex flex-col gap-2">
+                    <div id="callHistory" class="flex flex-col gap-2">
 
                     </div>
                 </div>
