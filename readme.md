@@ -1,165 +1,76 @@
-## WELCOME TO ( সহজ সরল সিম্পল ) ASSIGNMENT-005
 
-### 📅 Deadline For 60 marks: 29th August, 2025 (11:59 pm ⏱️)
 
-### 📅 No Deadline For 50 marks
+### **1. What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?**
 
-### 📅 Deadline For 30 marks: Any time after 29th August.
+* **getElementById("idName")**
+  👉 শুধুমাত্র *একটা element* select করে যার unique id থাকে।
+  👉 সবসময় একটা element বা null রিটার্ন করে।
 
----
+* **getElementsByClassName("className")**
+  👉 একই class থাকা *একাধিক element* select করে।
+  👉 HTMLCollection দেয় (array-এর মতো), কিন্তু এটা live collection (DOM পরিবর্তন হলে এটা সাথে সাথে update হয়)।
 
-## ✅ Main Requirements (50 Marks)
+* **querySelector("cssSelector")**
+  👉 CSS selector দিয়ে element select করা যায় (id, class, tag সবকিছু)।
+  👉 শুধু *প্রথম element* রিটার্ন করে যেটা selector মিলে।
 
-### 1. Navbar
-
-- **Website name & logo** on the left as Figma
-- **Heart icon, coin count (default-100), and Copy Count** on the right as Figma
-
----
-
-### 2. Hero Section
-
-- **Background Gradient** in the Whole Section
-- **A Relevant Logo** at the top-center
-- **Section Title** in the center
-- **A Relevant Slogan** in the bottom Center
+* **querySelectorAll("cssSelector")**
+  👉 সবগুলো element select করে যেগুলো selector মিলে।
+  👉 NodeList দেয় (array-এর মতো), এবং এটাতে forEach চালানো যায়।
 
 ---
 
-### 2. Main Section
+### *2. How do you create and insert a new element into the DOM?*
 
-This Section will have layout as figma
+Steps:
 
-<table border=1 width="100%" cellpadding="50">
-<tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
- </tr>
- <tr>
-    <td colspan=9 >Card Section</td>
-    <td colspan=3>History Section</td>
- </tr>
-</table>
+1. document.createElement("tagName") → নতুন element তৈরি করা।
+2. element.textContent বা element.innerHTML দিয়ে text/HTML যোগ করা।
+3. appendChild(), prepend(), বা insertBefore() দিয়ে DOM এ ঢোকানো।
 
-### Emergency Hotline Section
+👉 Example:
 
-- **Show Minimum 6 cards**. Each card will contain:
-  - Icon or Image
-  - Relevant Name
-  - Relevant Name in English
-  - Hotline number for calling
-  - Category Badge
-  - 💗 icon at left
-  - **2 buttons** at the bottom: Copy and Call with icons as Figma
-
-### History Section
-
-- **A white Background** in the whole section
-- **History Title with icon** at the top-left as Figma
-- **Clear History Button** at the top-right as Figma
+let newDiv = document.createElement("div"); 
+newDiv.textContent = "Hello, I am new!";
+document.body.appendChild(newDiv); 
 
 ---
 
-### 3. Responsiveness (5 Marks)
+### *3. What is Event Bubbling and how does it work?*
 
-- Website should be fully **responsive for mobile devices** (implementation up to you)
+* Event Bubbling মানে হচ্ছে যখন একটা element এ কোনো event ঘটে (যেমন button এ click), তখন সেই event **child থেকে parent → document পর্যন্ত উপরে উপরে propagate হয়**।
+* Example: যদি button এর উপর click করা হয়, তাহলে আগে button এর event trigger হবে → তারপর তার parent div → তারপর body → তারপর document পর্যন্ত যাবে।
 
----
-
-## Functionalities
-
-### 4. Heart Icons
-
-- Clicking on the 💗 **heart icon** of any card will increase the count in the Navbar
+👉 মানে event নিচ থেকে ওপরে যায় (bubble এর মতো)।
 
 ---
 
-### 5. Call Buttons
+### *4. What is Event Delegation in JavaScript? Why is it useful?*
 
-- On clicking a card's **Call Button**, following actions will happen:
-  - Show an **alert** with a message including the service name and number
-  - Each call will **cut 20 coins**. Reduce Coin after each click.
-  - If coins are less than 20, show a relevant alert and terminate the process.
-  - Add this service into the **Call History section** with:
-    - Service name
-    - Service number
+* *Event Delegation* মানে হচ্ছে অনেকগুলো child element এ আলাদা আলাদা event listener না দিয়ে parent element এ একটাই event listener বসানো।
+* Parent listener event bubbling এর মাধ্যমে child এর event ধরতে পারে।
 
----
+👉 *Why useful?*
 
-### 5. Call History Section
+1. Performance ভালো হয় (কম event listener use হয়)।
+2. Dynamically added elements এর উপরও কাজ করে (কারণ parent সবসময় DOM এ থাকে)।
 
-- Show all called services with name & number. This will empty initially. when call button clicked it will filled dynamically.
-- A **Clear History button** on the right
-- Clicking this button will remove all data from call history
+👉 Example:
 
----
-
-## Create Readme
-
-You have to create a `Readme.md` file. and write down following questions. Dont Try to copy paste from AI Tools. Just write what you know about these. If you don't know , then search , learn , understand and then write.
-
-### 6. Answer the following questions clearly:
-
-1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
-2. How do you **create and insert a new element into the DOM**?
-3. What is **Event Bubbling** and how does it work?
-4. What is **Event Delegation** in JavaScript? Why is it useful?
-5. What is the difference between **preventDefault() and stopPropagation()** methods?
+document.getElementById("cardSection").addEventListener("click", function(e) {
+  if(e.target.classList.contains("call-btn")) {
+    alert("Call button clicked!");
+  }
+});
 
 ---
 
-## 🧪 Challenges Part (10 Marks)
+### **5. What is the difference between preventDefault() and stopPropagation() methods?**
 
-- On clicking the **Copy button**, show an alert and **increase the copy count** (3 Marks)
+* **preventDefault()**
+  👉 Default behavior বন্ধ করে।
+  👉 Example: Form submit করলে page reload হয়। event.preventDefault() দিলে reload হবে না।
 
-- Hotline number will be **copied on click** so it can be pasted anywhere (4 Marks)
-
-💡Hint: You can ask for Help from `ChatGPT` Mamma . Just copy the below prompt , generate answer. use it with your own way.
-
-```bash
-I have a card with some text and a button inside it. I want that when a user clicks the button, some specific text from the card is copied to the clipboard using JavaScript. Please provide the code and explain it step by step.
-```
-
-- After clicking on the **Call button**, the **exact time of the call** will be shown in the Call History section (3 Marks)
-
-💡Hint: Search Google with that below question
-
-```bash
-How to get current local time in js
-```
-
----
-
-## ⚙️ Technology Stack
-
-- HTML
-- CSS ( Vanilla , Tailwind CSS , DaisyUI , Others - wheatever you like )
-- JavaScript ( Vanilla only. No Framework / Library Allowed )
-
----
-
-## 📌 Rules
-
-- ✅ Minimum **5 meaningful commits** required
-- ❌ No Lorem Ipsum or dummy placeholder text. Use **relevant content only**
-
----
-
-## 🔗 What to Submit
-
-- 📂 **GitHub Repository**
-- 🌐 **Live Link**
-
----
-
-# Let's Code and Achieve your Dream 🎯
+* **stopPropagation()**
+  Event bubbling বন্ধ করে দেয়।
+  Example: Button এ click করলে div এর click event ও trigger হয়। কিন্তু event.stopPropagation() দিলে parent div এর event এ আর যাবে না।
